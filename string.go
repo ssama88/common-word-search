@@ -58,6 +58,9 @@ func getCommonWordsInStrings(strings [10]string) {
 	uniqueWords := make(map[string]int)
 
 	for i := range strings {
+		if len(strings[i]) == 0 { //check for potential empty strings in input
+			continue
+		}
 		processText(strings[i], uniqueWords)
 	}
 	//Here : 1, I: 4 , am: 3 , There:1, What:1
