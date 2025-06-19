@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
+	fmt.Println("Hello world")
 	strings := [10]string{"Here I am", "There I am am am am am am am am am", "What I am"}
 	getCommonWordsInStrings(strings)
 }
